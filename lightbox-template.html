@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+
+	
+	<title>Lightbox</title>
+</head>
+<body>
+	<main>
+		<h1>Look at these cute cats</h1>
+		<div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".sabrina">Sabrina</button>
+            <button type="button" class="control" data-filter=".maitai">Mai Tai</button>
+            <button type="button" class="control" data-filter=".both">Both Kitties</button>
+
+            <button type="button" class="control" data-sort="default:asc">Asc</button>
+            <button type="button" class="control" data-sort="default:desc">Desc</button>
+        </div>
+
+		<div class = "gallery">
+			<a href="images/sabrina_01.jpg" data-lightbox="cats" class="mix sabrina" data-title="Sabrina thinks she's a model"><img src="images/sabrina_01.jpg" alt="Sabrina close up"></a>
+			<a href="images/maitai_01.jpg" data-lightbox="cats" class="mix maitai" data-title="Mai Tai on the bed with the best lighting"><img src="images/maitai_01.jpg" alt="Mai Tai on the bed"></a>
+			<a href="images/sabrina_02.jpg" data-lightbox="cats" class="mix sabrina" data-title="Sabrina loves to cuddle"><img src="images/sabrina_02.jpg" alt="Sabrina on the couch"></a>
+			<a href="images/maitai_02.jpg" data-lightbox="cats" class="mix maitai" data-title="Mai Tai would like some breakfast thanks"><img src="images/maitai_02.jpg" alt="Mai Tai on the chair"></a>
+			<a href="images/sabrina_03.jpg" data-lightbox="cats" class="mix sabrina" data-title="Even more cuddling with Sabrina"><img src="images/sabrina_03.jpg" alt="Sabrina on couch"></a>
+			<a href="images/maitai_03.jpg" data-lightbox="cats" class="mix maitai" data-title="Mai Tai would like some cuddles too thanks"><img src="images/maitai_03.jpg" alt="Mai Tai on the couch again"></a>
+			<a href="images/sabrina_04.jpg" data-lightbox="cats" class="mix sabrina" data-title="Sabrina loves this blanket"><img src="images/sabrina_04.jpg" alt="Sabrina in a blanket"></a>
+			<a href="images/maitai_04.jpg" data-lightbox="cats" class="mix maitai" data-title="Mai Tai loves to recycle and/or make a mess"><img src="images/maitai_04.jpg" alt="Mai Tai on the bed with a box"></a>
+			<a href="images/both_01.jpg" data-lightbox="cats" class="mix both" data-title="Both kitties love breakfast"><img src="images/both_01.jpg" alt="Both kitties at the table"></a>
+			<a href="images/both_02.jpg" data-lightbox="cats" class="mix both" data-title="Both kitties in the sun so nice"><img src="images/both_02.jpg" alt="Both kitties in the sun"></a>
+		</div>
+	</main>
+
+
+	<script src="js/lightbox.js"></script>
+	<script src="js/mixitup.min.js"></script>
+
+      <script>
+            var containerEl = document.querySelector('.gallery');
+
+            var mixer = mixitup(containerEl);
+      </script>
+
+</body>
+</html>
